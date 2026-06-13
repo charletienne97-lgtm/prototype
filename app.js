@@ -80,6 +80,8 @@ document.addEventListener('DOMContentLoaded', async ()=>{
     console.log(ch);
     console.log(ch.image);
     console.log(ch.image.url);
+    console.log("Character:", ch);
+    console.log("Image URL:", ch?.image?.url);
     img.src = ch.image.url;
     img.alt = ch.name;
     charCaption.textContent = `${ch.show} — ${ch.name}`;
