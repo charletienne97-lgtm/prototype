@@ -77,6 +77,9 @@ document.addEventListener('DOMContentLoaded', async ()=>{
 
   function showCharacter(i){
     const ch = gameChars[i];
+    console.log(ch);
+    console.log(ch.image);
+    console.log(ch.image.url);
     img.src = ch.image.url;
     img.alt = ch.name;
     charCaption.textContent = `${ch.show} — ${ch.name}`;
